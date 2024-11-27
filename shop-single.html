@@ -86,10 +86,15 @@
                     <a class="nav-icon d-none d-lg-inline" href="#" data-bs-toggle="modal" data-bs-target="#templatemo_search">
                         <i class="fa fa-fw fa-search text-dark mr-2"></i>
                     </a>
-                    <a class="nav-icon position-relative text-decoration-none" href="#">
+                    <!-- <a class="nav-icon position-relative text-decoration-none" href="#">
+                        <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
+                        <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
+                    </a> -->
+                    <a class="nav-icon position-relative text-decoration-none" href="cart.html">
                         <i class="fa fa-fw fa-cart-arrow-down text-dark mr-1"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
                     </a>
+                    
                     <a class="nav-icon position-relative text-decoration-none" href="#">
                         <i class="fa fa-fw fa-user text-dark mr-3"></i>
                         <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"></span>
@@ -300,7 +305,9 @@
                                         <button type="submit" class="btn btn-success btn-lg" name="submit" value="buy">Buy</button>
                                     </div>
                                     <div class="col d-grid">
-                                        <button type="submit" class="btn btn-success btn-lg" name="submit" value="addtocard">Add To Cart</button>
+                                        <button type="button" class="btn btn-success btn-lg" onclick="addToCart({ id: 1, name: 'Activewear', price: 599.99 })">Add To Cart</button>
+
+                                        <!-- <button type="submit" class="btn btn-success btn-lg" name="submit" value="addtocard">Add To Cart</button> -->
                                     </div>
                                 </div>
                             </form>
